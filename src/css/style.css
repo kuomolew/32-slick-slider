@@ -1,0 +1,180 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+html {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Poppins';
+  src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/poppins/Poppinsregular.woff2") format("woff2"), url("../fonts/poppins/Poppinsregular.woff") format("woff"), url("../fonts/poppins/Poppinsregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+  src: local("Poppins Poppins-BoldSemiBold"), local("Poppins-SemiBold"), url("../fonts/poppins/Poppinspoppins-boldsemibold.woff2") format("woff2"), url("../fonts/poppins/Poppinspoppins-boldsemibold.woff") format("woff"), url("../fonts/poppins/Poppinspoppins-boldsemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-left {
+    background-image: url(../img/icons/sprite.png);
+    background-position: 0px 0px;
+    width: 96px;
+    height: 96px;
+}
+
+.icon-arrow-right {
+    background-image: url(../img/icons/sprite.png);
+    background-position: -96px 0px;
+    width: 96px;
+    height: 96px;
+}
+
+body {
+    font-family: 'Poppins';
+    color: black;
+}
+
+.slider-wrap {
+    padding-top: 60px;
+    padding-bottom: 130px;
+    background: center repeat-y url("../img/background/bg-strips.png"), 75% 0.5%/auto no-repeat url("../img/background/bg-plus.png"), 15% 5%/auto no-repeat url("../img/background/bg-triangle.png");
+}
+
+.slider-container {
+    position: relative;
+}
+
+.icon-arrow-left {
+    position: absolute;
+    left: 0;
+    top: 180px;
+}
+
+.icon-arrow-right {
+    position: absolute;
+    right: 0;
+    top: 180px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #303030;
+    text-transform: uppercase;
+    line-height: 1.065;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 86px;
+    text-transform: uppercase;
+    line-height: 1.047;
+    text-align: center;
+    max-width: 1064px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+#slider .slide-item {
+    height: 400px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 35px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    margin: 0 15px;
+}
+
+#slider .slide-item h2 {
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 0.857;
+}
+
+#slider .slide-item h4 {
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+#slider .slide-1 {
+    background-image: url("../img/slider-items/item-1.jpg");
+}
+
+#slider .slide-2 {
+    background-image: url("../img/slider-items/item-2.jpg");
+}
+
+#slider .slide-3 {
+    background-image: url("../img/slider-items/item-3.jpg");
+}
+
+#slider .slide-4 {
+    background-image: url("../img/slider-items/item-4.jpg");
+}
